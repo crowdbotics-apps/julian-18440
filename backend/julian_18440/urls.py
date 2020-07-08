@@ -32,6 +32,8 @@ urlpatterns = [
     path("rest-auth/registration/", include("rest_auth.registration.urls")),
     path("api/v1/", include("eventapp.api.v1.urls")),
     path("home/", include("home.urls")),
+    path("api/v1/", include("dating.api.v1.urls")),
+    path("dating/", include("dating.urls")),
 ]
 
 admin.site.site_header = "Julian"
